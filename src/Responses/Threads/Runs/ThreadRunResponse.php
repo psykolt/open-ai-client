@@ -86,7 +86,7 @@ final class ThreadRunResponse implements ResponseContract, ResponseHasMetaInform
             $attributes['model'],
             $attributes['instructions'],
             $tools,
-            $attributes['file_ids'],
+            $attributes['file_ids'] ?? null,
             $attributes['metadata'],
             isset($attributes['usage']) ? ThreadRunResponseUsage::from($attributes['usage']) : null,
             $meta,
