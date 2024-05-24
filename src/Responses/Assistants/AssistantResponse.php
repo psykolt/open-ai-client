@@ -69,7 +69,7 @@ final class AssistantResponse implements ResponseContract, ResponseHasMetaInform
             $attributes['model'],
             $attributes['instructions'],
             $tools,
-            $attributes['file_ids'] ?? null,
+            $attributes['file_ids'] ?? [],
             $attributes['metadata'],
             $meta,
         );
